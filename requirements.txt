@@ -18,15 +18,13 @@ shortuuid==1.0.11
 #spacy==3.7.2
 timm==0.9.10
 torch
-torchvision==0.16.2
+torchvision
 tqdm==4.66.1
 protobuf==4.25.0
 transformers
 typing_extensions==4.8.0
 uvicorn==0.24.0.post1
-#xformers==0.0.22.post7
-#flash_attn==2.3.4
-vllm==0.5.4
+vllm
 sentencepiece==0.1.99
 accelerate==0.30.1
 socksio==1.0.0
