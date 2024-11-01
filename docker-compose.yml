@@ -3,7 +3,7 @@ services:
   ai_app:
     build:
       context: ./
-      dockerfile: /ai_app/Dockerfile
+      dockerfile: ai_app/Dockerfile
     container_name: ai_app-container
     working_dir: /ai_app
     volumes:

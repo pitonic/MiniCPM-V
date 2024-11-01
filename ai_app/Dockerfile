@@ -1,11 +1,11 @@
-FROM python:3.9-slim
+FROM python:3.10-slim
 
 COPY ./requirements.txt requirements.txt
 
 # Install system dependencies
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    # libjpeg-dev \
+    git \
     # libpng-dev \
     # libopenjp2-7 \
     # libtiff-dev \
