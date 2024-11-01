@@ -10,6 +10,7 @@ services:
       - ./:/ai_app
     ports:
       - "8885:8885"
+      - "8080:8080"
     runtime: nvidia  # Использование GPU runtime
     environment:
       - NVIDIA_VISIBLE_DEVICES=all  # Указываем все доступные GPU
