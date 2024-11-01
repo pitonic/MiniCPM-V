@@ -14,8 +14,8 @@ RUN apt-get update && apt-get install -y \
 # ENV CUDA_HOME=/usr/local/cuda
 
 # Upgrade pip and install Python dependencies
-RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+# RUN pip install --upgrade pip && \
+#     pip install --no-cache-dir -r requirements.txt
 
 # Upgrade pip and install Python dependencies
 RUN pip install vllm peft
