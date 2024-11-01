@@ -6,6 +6,7 @@ COPY ./requirements.txt requirements.txt
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
+    python3 python3-pip \
     # libpoppler-cpp-dev \
     && rm -rf /var/lib/apt/lists/*
 
