@@ -34,7 +34,7 @@ device = args.device
 assert device in ['cuda', 'mps']
 
 # Load model
-model_path = 'openbmb/MiniCPM-V-2_6'
+model_path = 'openbmb/MiniCPM-V-2'
 if 'int4' in model_path:
     if device == 'mps':
         print('Error: running int4 model with bitsandbytes on Mac is not supported right now.')
@@ -554,4 +554,3 @@ with gr.Blocks(css=css) as demo:
 
 # launch
 demo.launch(share=False, debug=True, show_api=False, server_port=8885, server_name="0.0.0.0")
-
