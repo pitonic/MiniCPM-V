@@ -25,6 +25,7 @@ transformers
 typing_extensions==4.8.0
 uvicorn==0.24.0.post1
 vllm
+setuptools
 sentencepiece==0.1.99
 accelerate==0.30.1
 socksio==1.0.0
