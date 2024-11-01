@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM nvidia/cuda:12.4.1-base-ubuntu22.04
 
 COPY ./requirements.txt requirements.txt
 
@@ -6,22 +6,6 @@ COPY ./requirements.txt requirements.txt
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
-    # libpng-dev \
-    # libopenjp2-7 \
-    # libtiff-dev \
-    # zlib1g-dev \
-    # libfreetype6-dev \
-    # liblcms2-dev \
-    # libwebp-dev \
-    # tk-dev \
-    # libharfbuzz-dev \
-    # ffmpeg \
-    # libavcodec-dev \
-    # libavformat-dev \
-    # libswscale-dev \
-    # libsm6 \
-    # libxext6 \
-    # libxrender-dev \
     # libpoppler-cpp-dev \
     && rm -rf /var/lib/apt/lists/*
 
