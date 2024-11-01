@@ -15,7 +15,6 @@ Pillow==10.1.0
 sacrebleu==2.3.2
 seaborn==0.13.0
 shortuuid==1.0.11
-#spacy==3.7.2
 timm==0.9.10
 torch
 torchvision
@@ -24,7 +23,7 @@ protobuf==4.25.0
 transformers
 typing_extensions==4.8.0
 uvicorn==0.24.0.post1
-vllm
+# vllm
 setuptools
 sentencepiece==0.1.99
 accelerate==0.30.1

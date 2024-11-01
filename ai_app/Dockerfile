@@ -1,4 +1,4 @@
-FROM nvidia/cuda:12.1.0-cudnn8-runtime-ubuntu22.04
+FROM python:3.10-slim
 
 COPY ./requirements.txt requirements.txt
 
@@ -6,12 +6,12 @@ COPY ./requirements.txt requirements.txt
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
     git \
-    python3 python3-pip \
+    # python3 python3-pip \
     # libpoppler-cpp-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Set the CUDA_HOME environment variable
-ENV CUDA_HOME=/usr/local/cuda
+# ENV CUDA_HOME=/usr/local/cuda
 
 # Upgrade pip and install Python dependencies
 RUN pip install --upgrade pip && \
