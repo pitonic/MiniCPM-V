@@ -1,6 +1,6 @@
 
 services:
-  ocr:
+  ai_app:
     build:
       context: ./
       dockerfile: /ai_app/Dockerfile
@@ -9,7 +9,7 @@ services:
     volumes:
       - ./:/ai_app
     ports:
-      - "8001:8001"
+      - "8011:8011"
     runtime: nvidia  # Использование GPU runtime
     environment:
       - NVIDIA_VISIBLE_DEVICES=all  # Указываем все доступные GPU
